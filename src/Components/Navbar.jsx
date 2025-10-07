@@ -1,9 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink} from 'react-router';
+import logo from '../assets/logo.png';
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
+  
+    
     return (
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar md:px-20 bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -12,26 +16,25 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+          <NavLink to="/">Home</NavLink>
+           <NavLink to="/apps" >Apps</NavLink>
+   <NavLink>Installation</NavLink>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="flex items-center">
+        <img className='w-10 h-10' src={logo} alt="" />
+        <h3 className='font-bold  bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>HERO.IO</h3>
+    </a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu flex gap-8 text-[#632EE3] font-semibold menu-horizontal px-1">
    <NavLink to="/">Home</NavLink>
+   <NavLink to="/apps" >Apps</NavLink>
+   <NavLink>Installation</NavLink>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to={`https://github.com/maisha850/hero-io`} className='btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white'><FaGithub size={20}></FaGithub> Contribute</Link>
   </div>
 </div>
     );
