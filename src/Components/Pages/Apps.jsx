@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import AppCard from '../AppCard';
+
 
 const Apps = () => {
     const data=useLoaderData()
@@ -18,11 +19,14 @@ const Apps = () => {
             <h3 className='text-2xl font-semibold mb-3 md:mb-0'>({filteredSearch.length})Apps are found </h3>
             <input value={search} onChange={(e)=>setSearch(e.target.value)} className='input' type="search" name='' placeholder='Search Apps' />
         </div>
-           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-10'>
+           {
+            filteredSearch.length===0 ? <div className='text-3xl text-gray-500 font-bold text-center my-20'> No App Found</div> :
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-10'>
             {
           filteredSearch.map(card=><AppCard key={card.id} card={card}></AppCard>)
             }
         </div>
+           }
         </div>
     );
 };

@@ -15,8 +15,8 @@ const Home = () => {
            
            <p className='text-[#627382] text-center mt-4'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
            <div className='flex justify-center gap-4 my-10'>
-            <button className='btn bg-white text-xl font-semibold py-3'><span><img className='w-10' src={`https://static.vecteezy.com/system/resources/previews/022/613/026/original/google-play-store-icon-logo-symbol-free-png.png`} alt="" /></span>Google Play</button>
-             <button className='btn bg-white text-xl font-semibold py-3'><span><img className='w-6' src={`https://e7.pngegg.com/pngimages/566/36/png-clipart-app-store-iphone-apple-app-store-icon-blue-text.png`} alt="" /></span>App store</button>
+            <Link to="https://play.google.com/store/" className='btn bg-white text-xl font-semibold py-3'><span><img className='w-10' src={`https://static.vecteezy.com/system/resources/previews/022/613/026/original/google-play-store-icon-logo-symbol-free-png.png`} alt="" /></span>Google Play</Link>
+             <Link to="https://www.apple.com/app-store/" className='btn bg-white text-xl font-semibold py-3'><span><img className='w-6' src={`https://e7.pngegg.com/pngimages/566/36/png-clipart-app-store-iphone-apple-app-store-icon-blue-text.png`} alt="" /></span>App store</Link>
            </div>
          <figure className='flex justify-center'>
               <img src={hero} alt="" />

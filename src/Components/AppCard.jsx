@@ -1,12 +1,14 @@
 import React from 'react';
 import { IoStar } from "react-icons/io5";
 import { MdOutlineFileDownload } from 'react-icons/md';
+import { Link } from 'react-router';
 
 const AppCard = ({card}) => {
-    const{title, image,ratingAvg, downloads}=card
+  
+    const{title, image,ratingAvg, downloads,id}=card
     return (
-        <div>
-            <div className="card bg-base-100  shadow-md">
+        <Link to={`/appDetails/${id}`}>
+                <div className="card bg-base-100  shadow-md">
   <figure className='h-[316px]'>
     <img
      className='w-[316px] rounded-2xl p-4' src={image}
@@ -21,7 +23,7 @@ const AppCard = ({card}) => {
     </div>
   </div>
 </div>
-        </div>
+        </Link>
     );
 };
 
