@@ -1,18 +1,28 @@
-import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import React, { useState } from 'react';
+import { Link, useLoaderData, useParams } from 'react-router';
 import download from '../../assets/icon-downloads.png';
 import rating from '../../assets/icon-ratings.png';
 import review from '../../assets/icon-review.png'
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { toast, ToastContainer } from 'react-toastify';
+import { addData } from '../../Utility';
 
 
 const AppDetails = () => {
     const {id}=useParams()
     const data=useLoaderData()
     const findCard=data.find(item=>item.id===Number(id))
+    const[btn,setBtn]=useState(false)
     
     const {image,title,description,companyName,downloads,ratings,ratingAvg,reviews,size}=findCard
     const rat=[...ratings].sort((a,b)=>b.count-a.count)
+
+  const handleBtn=(id)=>{
+    toast.success(`Yahoo⚡${title} is installed successfully`,{position: 'top-center'})
+setBtn(!btn)
+addData(id)
+
+  }
     
     return (
         <div>
@@ -39,7 +49,10 @@ const AppDetails = () => {
                         <h3 className='font-extrabold text-[40px]'>{reviews/1000}K</h3>
                     </div>
                 </div>
-                <button className='btn btn-success text-white mt-7'>Install Now ({size} MB)</button>
+                
+
+                    <Link>{btn ? <button className='btn btn-success text-white mt-7' disabled>Installed</button> : <button  onClick={()=>handleBtn(id)} className='btn btn-success text-white mt-7'>{`Install Now (${size}MB)`}
+                     </button> }</Link>
             </div>
             
            
@@ -64,6 +77,7 @@ const AppDetails = () => {
 
            <h3 className='font-semibold text-xl mt-10'>Description</h3>
            <p className='text-[#627382] mt-4 '>{description}</p>
+           <ToastContainer></ToastContainer>
 
         </div>
     );
