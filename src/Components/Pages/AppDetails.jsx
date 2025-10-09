@@ -22,6 +22,7 @@ const AppDetails = () => {
 setBtn(!btn)
 addData(id)
 
+
   }
     
     return (
@@ -51,7 +52,7 @@ addData(id)
                 </div>
                 
 
-                    <Link>{btn ? <button className='btn btn-success text-white mt-7' disabled>Installed</button> : <button  onClick={()=>handleBtn(id)} className='btn btn-success text-white mt-7'>{`Install Now (${size}MB)`}
+                    <Link  onClick={()=>handleBtn(id)}>{btn ? <button className='btn btn-success text-white mt-7'>Installed</button> : <button  className='btn btn-success text-white mt-7'>{`Install Now (${size}MB)`}
                      </button> }</Link>
             </div>
             

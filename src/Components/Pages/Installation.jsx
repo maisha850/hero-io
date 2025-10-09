@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { IoStar } from 'react-icons/io5';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import { useLoaderData } from 'react-router';
-import { getData } from '../../Utility';
+import { getData, removeData } from '../../Utility';
 
 const Installation = () => {
     const data=useLoaderData()
     const [install, setInstall]=useState([])
-    const[sort,setSort]=('')
+    const[sort, setSort]=useState("")
     useEffect(()=>{
         const storedApp=getData()
         const convertIdInNum=storedApp.map(id=>parseInt(id))
@@ -16,18 +16,24 @@ const Installation = () => {
     },[data])
 
     const handleSort=(type)=>{
-        setSort(type)
-if(type==="low"){
-
-  const sortAsc=[...install].sort((a,b)=>a.downloads-b.downloads)
-  setInstall(sortAsc)
-}
-if(type==="high"){
-
-  const sortdsc=[...install].sort((a,b)=>b.downloads-a.downloads)
-  setInstall(sortdsc)
-}
+      setSort(type)
+      if(type==='Low-High'){
+        const sorting=[...install].sort((a,b)=>a.downloads - b.downloads)
+        setInstall(sorting)
+      }
+       if(type==='High-Low'){
+        const sorting=[...install].sort((a,b)=>b.downloads - a.downloads)
+        setInstall(sorting)
+      }
+      
+       
     }
+    const handleUninstallBtn=(id)=>{
+      removeData(id)
+const filteredBtn=install.filter(btn=>btn.id!==id)
+setInstall(filteredBtn)
+    }
+    
     
     return (
         <div>
@@ -38,11 +44,11 @@ if(type==="high"){
         <div className='flex justify-between'>
           <h3 className='font-semibold text-2xl'>{install.length} Apps found</h3>
           <details className="dropdown">
-  <summary className="btn m-1 text-[#627382]">Sort By Size</summary>
+  <summary className="btn m-1 text-[#627382]">{sort ? sort : "Sort by size"} </summary>
   <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-    <li className='text-[#627382]'><a>Sort By Size: {sort ? sort : ''}</a></li>
-    <li><a onClick={()=>handleSort('low')}>Low-High</a></li>
-    <li><a onClick={()=>handleSort('high')} >High-Low</a></li>
+    <li className='text-[#627382]'><a>Sort By Size: </a></li>
+    <li><a onClick={()=>handleSort('Low-High')}>Low-High</a></li>
+    <li><a onClick={()=>handleSort('High-Low')} >High-Low</a></li>
   </ul>
 </details>
         </div>
@@ -63,7 +69,7 @@ if(type==="high"){
                             </div>
                     </div>
                   </div>
-                  <button className='btn btn-success text-white'>Uninstall</button>
+                  <button onClick={()=>handleUninstallBtn(app.id)} className='btn btn-success text-white'>Uninstall</button>
                   </div>
                 </div>)
             }

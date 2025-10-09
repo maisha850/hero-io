@@ -21,4 +21,10 @@ const addData=(id)=>{
     }
 
 }
-export {addData,getData}
+
+const removeData=(id)=>{
+    const removeData=getData()
+    const remove=removeData.filter(rmv=>rmv.id!==id)
+    localStorage.setItem("app",JSON.stringify(remove))
+}
+export {addData,getData, removeData}
