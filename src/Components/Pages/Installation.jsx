@@ -44,7 +44,7 @@ setInstall(filteredBtn)
     
     
     return (
-        <div>
+        <div className='w-11/12 mx-auto'>
            <div className='text-center '>
              <h3 className='font-bold text-5xl'>Your Installed Apps</h3>
          <p className='text-[#627382] mt-4'>Explore All Trending Apps on the Market developed by us</p>
@@ -64,7 +64,7 @@ setInstall(filteredBtn)
             {
                 install.map(app=>
                 <div key={app.id}>
-                  <div className='p-4 shadow-lg mt-4 flex items-center justify-between'>
+                  <div className='p-4 shadow-lg mt-4 flex items-center justify-between bg-white'>
                     <div className='flex items-center gap-4'>
                       <img className='w-20 rounded-xl' src={app.image} alt="" />
                     <div>
@@ -82,7 +82,7 @@ setInstall(filteredBtn)
                 </div>)
             }
         </div>
-        
+
         
         </div>
     );

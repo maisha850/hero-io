@@ -33,7 +33,7 @@ toast.success(`Yahoo⚡${title} is installed successfully` , {position: 'top-cen
   }
 
   return (
-    <div>
+    <div className='w-11/12 mx-auto'>
       <div className='lg:flex items-center gap-12'>
         <img className='w-[350px] shadow-xl' src={image} alt="" />
         <div>

@@ -25,7 +25,7 @@ const Apps = () => {
     },[search])
 
     return (
-        <div>
+        <div className='w-11/12 mx-auto'>
             <div className='text-center '>
              <h3 className='font-bold text-5xl'>Our All Applications</h3>
          <p className='text-[#627382] mt-4'>Explore All Apps on the Market developed by us. We code for Millions</p>

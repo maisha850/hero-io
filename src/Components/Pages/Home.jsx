@@ -6,7 +6,7 @@ import AppCard from '../AppCard';
 const Home = () => {
     const alldata=useLoaderData()
     const data=alldata.slice(0,8)
-    console.log(data)
+    
     return (
         <div>
            
@@ -21,7 +21,7 @@ const Home = () => {
          <figure className='flex justify-center'>
               <img src={hero} alt="" />
          </figure>
-         <div className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-center lg:px-0 px-5 py-20 lg:-ml-20  lg:w-[1528px]'>
+         <div className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-center lg:px-0 px-5 py-20  lg:max-w-full'>
             <h3 className='font-bold lg:text-5xl text-4xl text-white'>Trusted by Millions, Built for You</h3>
           <div className='lg:flex justify-center gap-30 mt-20'>
               <div>
@@ -47,7 +47,7 @@ const Home = () => {
              <h3 className='font-bold text-5xl'>Trending Apps</h3>
          <p className='text-[#627382] mt-4'>Explore All Trending Apps on the Market developed by us</p>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-10'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-10 w-11/12 mx-auto'>
             {
                 data.map(card=><AppCard key={card.id} card={card} ></AppCard>)
             }

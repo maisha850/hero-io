@@ -13,7 +13,7 @@ const Root = () => {
     return (
         <div>
             <Navbar></Navbar>
-           <main className='w-11/12 mx-auto py-20'>
+           <main className=' py-20 bg-base-200'>
            {isNavigating ? <div className='flex justify-center items-center'><PulseLoader color="#9F62F2" size={25}></PulseLoader></div> :   <Outlet></Outlet> }
            
            </main>
