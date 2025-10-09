@@ -24,8 +24,9 @@ useEffect(()=>{
   }
 },[id])
   const handleBtn=(id)=>{
-    toast.success(`Yahoo⚡${title} is installed successfully`,{position: 'top-center'})
+  
 setBtn(true)
+  toast.success(`Yahoo⚡${title} is installed successfully`, {position: 'top-center'})
 addData(String(id))
 
 
