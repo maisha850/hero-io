@@ -16,9 +16,9 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <NavLink to="/">Home</NavLink>
-           <NavLink to="/apps" >Apps</NavLink>
-   <NavLink>Installation</NavLink>
+         <NavLink className={({isActive})=>isActive &&  "text-[#632EE3] underline"} to="/">Home</NavLink>
+   <NavLink className={({isActive})=>isActive &&  "text-[#632EE3] underline"} to="/apps" >Apps</NavLink>
+   <NavLink className={({isActive})=>isActive &&  "text-[#632EE3] underline"} to="/installation" >Installation</NavLink>
       </ul>
     </div>
     <Link to="/" className='flex items-center'>

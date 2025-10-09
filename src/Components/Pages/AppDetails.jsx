@@ -27,7 +27,7 @@ addData(id)
     
     return (
         <div>
-           <div className='flex items-center gap-12'>
+           <div className='lg:flex items-center gap-12'>
              <img className='w-[350px] shadow-xl' src={image} alt="" />
             <div>
                 <h3 className='font-bold text-[32px]'>{title}</h3>
@@ -61,7 +61,7 @@ addData(id)
 
            <div className="divider mt-10"></div>
            <h3 className='font-semibold text-xl mb-4'>Ratings</h3>
-          <div className="w-400 h-96   ">
+          <div className="lg:w-400 md:w-200 w-150 h-96   ">
       <ResponsiveContainer width="60%" height="100%">
         <BarChart data={rat} width={500} height={600} layout="vertical"  >
           
