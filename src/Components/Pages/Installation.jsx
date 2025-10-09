@@ -34,7 +34,7 @@ const Installation = () => {
     const handleUninstallBtn=(id)=>{
       const appRemove = install.find(app=> app.id === id)
     
-      toast(`${appRemove.title} is uninstalled`)
+      toast(`🚮${appRemove.title} is uninstalled`,{position:'top-center'})
       removeData(id)
 const filteredBtn=install.filter(btn=>btn.id!==id)
 setInstall(filteredBtn)

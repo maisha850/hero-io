@@ -14,8 +14,13 @@ Home IO is a multi-functional app platform that brings together a collection of 
 
 ## The technologies used:
 1.React router.
+
 2.Tailwind CSS.
+
 3.Daisy UI.
+
 4.Rechart.
+
 5.React Spinners.
+
 6.React Icons
