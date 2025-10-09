@@ -21,9 +21,9 @@ const Home = () => {
          <figure className='flex justify-center'>
               <img src={hero} alt="" />
          </figure>
-         <div className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-center py-20 -ml-20 w-[1528px]'>
-            <h3 className='font-bold text-5xl text-white'>Trusted by Millions, Built for You</h3>
-          <div className='flex justify-center gap-30 mt-20'>
+         <div className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-center lg:px-0 px-5 py-20 lg:-ml-20  lg:w-[1528px]'>
+            <h3 className='font-bold lg:text-5xl text-4xl text-white'>Trusted by Millions, Built for You</h3>
+          <div className='lg:flex justify-center gap-30 mt-20'>
               <div>
                  <p className='text-white font-light'>Total Downloads</p>
                 <h3 className='font-extrabold text-6xl text-white py-3'>29.6M</h3>

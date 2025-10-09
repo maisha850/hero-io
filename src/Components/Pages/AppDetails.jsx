@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import download from '../../assets/icon-downloads.png';
 import rating from '../../assets/icon-ratings.png';
 import review from '../../assets/icon-review.png'
 import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { toast, ToastContainer } from 'react-toastify';
-import { addData } from '../../Utility';
+import { addData, getData } from '../../Utility';
 
 
 const AppDetails = () => {
@@ -16,11 +16,17 @@ const AppDetails = () => {
     
     const {image,title,description,companyName,downloads,ratings,ratingAvg,reviews,size}=findCard
     const rat=[...ratings].sort((a,b)=>b.count-a.count)
+useEffect(()=>{
+  const storedData=getData()
 
+  if(storedData.includes(String(id))){
+    setBtn(true)
+  }
+},[id])
   const handleBtn=(id)=>{
     toast.success(`Yahoo⚡${title} is installed successfully`,{position: 'top-center'})
-setBtn(!btn)
-addData(id)
+setBtn(true)
+addData(String(id))
 
 
   }
@@ -54,6 +60,8 @@ addData(id)
 
                     <Link  onClick={()=>handleBtn(id)}>{btn ? <button className='btn btn-success text-white mt-7'>Installed</button> : <button  className='btn btn-success text-white mt-7'>{`Install Now (${size}MB)`}
                      </button> }</Link>
+
+                    
             </div>
             
            
