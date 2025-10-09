@@ -3,7 +3,8 @@ import { IoStar } from 'react-icons/io5';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import { useLoaderData } from 'react-router';
 import { getData, removeData } from '../../Utility';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
+
 
 const Installation = () => {
     const data=useLoaderData()
@@ -34,7 +35,7 @@ const Installation = () => {
     const handleUninstallBtn=(id)=>{
       const appRemove = install.find(app=> app.id === id)
     
-      toast(`🚮${appRemove.title} is uninstalled`,{position:'top-center'})
+      toast.info(`🚮${appRemove.title} is uninstalled`,{position:'top-center'})
       removeData(id)
 const filteredBtn=install.filter(btn=>btn.id!==id)
 setInstall(filteredBtn)
@@ -81,7 +82,8 @@ setInstall(filteredBtn)
                 </div>)
             }
         </div>
-        <ToastContainer></ToastContainer>
+        
+        
         </div>
     );
 };

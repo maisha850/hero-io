@@ -3,6 +3,9 @@ import Navbar from './Components/Navbar';
 import { Outlet, useNavigation } from 'react-router';
 import Footer from './Components/Footer';
 import { PulseLoader } from 'react-spinners';
+import { ToastContainer } from 'react-toastify';
+
+
 
 const Root = () => {
     const navigation=useNavigation()
@@ -15,6 +18,8 @@ const Root = () => {
            
            </main>
            <Footer></Footer>
+           <ToastContainer></ToastContainer>
+           
         </div>
     );
 };
