@@ -6,8 +6,8 @@ import logo from '../assets/logo.png'
 const Footer = () => {
     return (
          <div>
-           <div className='bg-[#001931] pt-20 pb-5 md:pl-0 pl-4'>
-            <div className='flex md:flex-row md:gap-0 gap-8 flex-col justify-center'>
+           <div className='bg-[#001931] pt-20 pb-5 lg:pl-0 pl-4'>
+            <div className='flex lg:flex-row md:gap-0 gap-8 flex-col justify-center'>
         <div className='mr-26'>
             <Link to="/" className='flex items-center'>
     <img className='w-10 h-10' src={logo} alt="" />

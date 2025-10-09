@@ -2,6 +2,7 @@
   {
     "image": "https://static.vecteezy.com/system/resources/previews/016/716/474/non_2x/snapchat-icon-free-png.png",
     "title": "SnapPic",
+    "subtitle": "Capture Moments",
     "companyName": "Visionary Labs",
     "id": 1,
     "description": "Capture and edit photos instantly with AI-powered filters and effects Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -18,8 +19,9 @@
     ]
   },
   {
-    "image": "https://cdn.mos.cms.futurecdn.net/cyD98y34qusLbZHxwg83oG.jpg",
+    "image": "https://play-lh.googleusercontent.com/xgn9DZAlX593plws7XSX7YlskkXtxZywVDzJW_OP7BHf7ebTCNpTzwCZvUfGZeKX1Ns8",
     "title": "TaskMate",
+     "subtitle": "Your Task Manager",
     "companyName": "NovaTech Studios",
     "id": 2,
     "description": "Organize your daily tasks, set reminders, and increase productivity effortlessly Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -38,6 +40,7 @@
   {
     "image": "https://play-lh.googleusercontent.com/4UFP6O-_KzIsQMtMf-0iI8vvnZjXh8GhWnjQInGJCRDaiSDkXAMpZiuyqDeKZpNhYg",
     "title": "FitLife",
+    "subtitle": "Fit everyday",
     "companyName": "MoveWell Inc.",
     "id": 3,
     "description": "Track your workouts, calories, and sleep cycle for a balanced lifestyle Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -56,6 +59,7 @@
   {
     "image": "https://findmyaitool.io/wp-content/uploads/2024/08/musicfy-ai-logo.png",
     "title": "Musicify",
+    "subtitle": "Stream,Discover,Enjoy.",
     "companyName": "Harmony Apps",
     "id": 4,
     "description": "Stream your favorite songs and discover trending artists worldwide Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -74,6 +78,7 @@
   {
     "image": "https://play-lh.googleusercontent.com/1mRtc8vWHxlRzov8Jw44X6LclxjmEgPCIZHLkJrmbtDBy9FcOLKyl1mJmyiAymErhAs",
     "title": "LearnIt",
+     "subtitle": "Learn Smarter,Not Harder",
     "companyName": "EduSpark",
     "id": 5,
     "description": "An all-in-one e-learning app offering short, interactive video courses Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -92,6 +97,7 @@
   {
     "image": "https://yt3.googleusercontent.com/s3fa012yfVbmktmsdqrMh95U9Z5bwd0UBzUzzfSRm_wzJywbaVUHeW0-4DCI4qm9zQxxFoUb=s900-c-k-c0x00ffffff-no-rj",
     "title": "TravelGo",
+     "subtitle": "Travel Anywhere",
     "companyName": "WanderWorld",
     "id": 6,
     "description": "Plan trips, book hotels, and find the best travel destinations near you Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -111,6 +117,7 @@
     "image": "https://play-lh.googleusercontent.com/NTjz3CcarbXmd20xtPRyArMW7crNBj8H_RdsR2NpBnsm6ocSrwzBJKVN2-uPhEfHQYc",
     "title": "FinTrack",
     "companyName": "MoneyWise",
+        "subtitle": "Smart Finance Assistant",
     "id": 7,
     "description": "Manage your budget, track expenses, and visualize your financial goals Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
     "size": 38,
@@ -126,8 +133,9 @@
     ]
   },
   {
-    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/69/72/74697291-5e4f-bf25-f0a4-4701129f5fa7/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png",
+    "image": "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
     "title": "NoteEase",
+    "subtitle": "Notes Made Simple",
     "companyName": "SmartPad Co.",
     "id": 8,
     "description": "A clean and fast note-taking app with sync and offline support Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -146,6 +154,7 @@
   {
     "image": "https://chainbroker.io/_next/image/?url=https:%2F%2Fstatic.chainbroker.io%2Fmediafiles%2Fprojects%2Fgamezone%2Fgamezone.jpg&w=2560&q=75",
     "title": "GameZone",
+       "subtitle": "Play. Compete. Win.",
     "companyName": "NextPlay Studios",
     "id": 9,
     "description": "Play and compete in online tournaments for your favorite mobile games Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -164,6 +173,7 @@
   {
     "image": "https://mindspacepk.com/wp-content/uploads/2020/12/Mindspace-Logo-1532x1536.jpg",
     "title": "MindSpace",
+        "subtitle": "Focus. Relax. Recharge.",
     "companyName": "CalmTech",
     "id": 10,
     "description": "Meditation, relaxation, and focus exercises for a peaceful mind Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -182,6 +192,7 @@
   {
     "image": "https://esportligaen.dk/wp-content/uploads/2022/08/FoodiEZ.jpg",
     "title": "Foodiez",
+      "subtitle": "Eat Smart, Live Better",
     "companyName": "TasteWave",
     "id": 11,
     "description": "Find nearby restaurants, explore menus, and order your favorite food Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -200,6 +211,7 @@
   {
     "image": "https://res.cloudinary.com/imagist/image/fetch/f_auto/q_auto/c_scale,w_2624/https://images.ctfassets.net/dm4oa8qtogq0/6TNeGaYvKMcWzdnF2tPUDJ/30b7b240e2f81d7667610bec98a25306/ShopMe-icon.png?_a=BATARNcY0",
     "title": "ShopMe",
+     "subtitle": "Shop Smarter Every Day",
     "companyName": "RetailTech Global",
     "id": 12,
     "description": "Browse and shop from thousands of brands at the best prices Our app is designed to make your daily tasks easier, faster, and more organized. With a clean interface and smart features, it helps you stay productive, manage your time efficiently, and stay connected wherever you go. Whether you're tracking goals, exploring content, or staying updated, this app gives you everything in one simple, easy-to-use platform.",
@@ -213,6 +225,64 @@
       { "name": "3 star", "count": 3200 },
       { "name": "4 star", "count": 9600 },
       { "name": "5 star", "count": 14600 }
+    ]
+  },
+
+  {
+    "image": "https://marketplace.canva.com/s_hAg/MAFysRs_hAg/1/tl/canva-bulb-brain-idea-quiz-icon-MAFysRs_hAg.png",
+    "title": "MindFocus",
+    "subtitle": "Meditation & Calm App",
+    "companyName": "Zenify Studio",
+    "id": 13,
+    "description": "Relax, meditate, and improve focus through calming sounds, guided breathing, and sleep aids.",
+    "size": 90,
+    "reviews": 27600,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 17800 }
+    ]
+  },
+   {
+    "image": "https://play-lh.googleusercontent.com/l55jqaSB7Fs8HDKiQt3ejbc8QQFtqmkv7zt-l5TX79ivMx7RucFU9mfciJ--mN_WLdA",
+    "title": "Readly",
+    "subtitle": "Read Smarter",
+    "companyName": "BookMind",
+    "id": 14,
+    "description": "Enjoy unlimited access to ebooks, audiobooks, and magazines from your favorite authors.",
+    "size": 115,
+    "reviews": 39000,
+    "ratingAvg": 4.3,
+    "downloads": 1700000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 6300 },
+      { "name": "4 star", "count": 11300 },
+      { "name": "5 star", "count": 17700 }
+    ]
+  },
+  {
+    "image": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlMl9zaW1wbGVfbGluZV9uZW9uX29mX2dhbWVfaWNvbl9pbl90aGVfc3R5bGVfb2ZfcF8wZjE3ZjFhNC1kYjBiLTQyNDYtYWEzNC00NzFkM2M2MzJiNzBfMi5qcGc.jpg",
+    "title": "GameHub",
+    "subtitle": "All Games in One Place",
+    "companyName": "PixelCore",
+    "id": 15,
+    "description": "Discover, download, and play hundreds of trending games all within a single app hub.",
+    "size": 160,
+    "reviews": 90300,
+    "ratingAvg": 4.6,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 3400 },
+      { "name": "2 star", "count": 4100 },
+      { "name": "3 star", "count": 9700 },
+      { "name": "4 star", "count": 22700 },
+      { "name": "5 star", "count": 50400 }
     ]
   }
   

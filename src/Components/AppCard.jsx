@@ -5,17 +5,17 @@ import { Link } from 'react-router';
 
 const AppCard = ({card}) => {
   
-    const{title, image,ratingAvg, downloads,id}=card
+    const{title, image,ratingAvg, downloads,id,subtitle}=card
     return (
         <Link to={`/appDetails/${id}`}>
                 <div className="card bg-base-100  shadow-md">
-  <figure className='h-[316px]'>
+  <figure className='h-[316px] w-[316px]  rounded-xl'>
     <img
-     className='w-[316px] rounded-2xl p-4' src={image}
+     className=' p-4' src={image}
       alt="Shoes" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">{title}</h2>
+    <h2 className="card-title">{title}:<span className='text-[16px]'>{subtitle}</span></h2>
    
     <div className="card-actions justify-between">
           <button className='btn btn-sm btn-soft btn-success'><MdOutlineFileDownload size={15}></MdOutlineFileDownload> {downloads/1000000}M</button>
